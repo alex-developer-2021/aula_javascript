@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Minha Página Javascript</title>
+</head>
+<body onload="load()"> <!--Uso o ONLOAD para chamar a função LOAD ao carregar o BODY da página-->
+    <h1>Minha Página JS</h1>
+    <button type="button" onclick="clicou()">Clique aqui</button> 
+    <p id="agradecimento" onclick="redirecionar()"></p>
+    <p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p>
+    <p id="mousemove" onmouseover="trocar1(this)" onmouseout="voltar1(this)">Passe o mouse aqui agora</p> <!--Usando o THIS, me referencio a este elemento-->
+    <p id="mousemove" onmouseover="trocar1(this)" onmouseout="voltar1(this)">Passe o mouse aqui agora</p>
+
+    <select onchange="funcaochange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+</body>
+</html>
